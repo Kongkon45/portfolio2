@@ -12,7 +12,12 @@ const Hero = () => {
                     <p className='text-base xl:text-lg font-normal leading-normal text-black mt-[10px]'>I'm a passionate web developer with expertise in React, Next.js, and modern web technologies. I love creating beautiful and functional website that solve real world problems.</p>
                     <div className="flex items-center gap-10 mt-[20px] lg:mt-[30px]">
                         <button className='flex items-center gap-1 bg-blue-500 hover:bg-gray-950 border-2 hover:border-blue-500 text-white text-lg font-bold leading-normal py-2 px-4 rounded-lg transition ease-in-out dealy-150 duration-300'>Contact Me <IoIosSend className="w-[26px] h-[26px]"/> </button>
-                        <button className='flex items-center gap-1 bg-blue-500 hover:bg-gray-950 border-2 hover:border-blue-500 text-white text-lg font-bold leading-normal py-2 px-4 rounded-lg transition ease-in-out dealy-150 duration-300'>Download CV <LuDownload className="w-[26px] h-[26px]"/> </button>
+
+                        <a className='flex items-center gap-1 bg-blue-500 hover:bg-gray-950 border-2 hover:border-blue-500 text-white text-lg font-bold leading-normal py-2 px-4 rounded-lg transition ease-in-out dealy-150 duration-300' href="/assets/files/Kongkon-Jowarder-Resume.pdf" target="_blank">
+                         Download CV <LuDownload className="w-[26px] h-[26px]"/>
+                        
+                        </a>
+                        
                     </div>
                 </div>
                 <div className='md:col-span-1 flex justify-center items-center'>
