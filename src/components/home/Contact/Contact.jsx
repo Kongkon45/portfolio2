@@ -1,6 +1,7 @@
 "use client";
+import dynamic from "next/dynamic";
 // import Lottie from "lottie-react";
-const Lottie = dynamic(() => import('lottie-react'), { ssr: false });
+
 import React from "react";
 import { useForm } from "react-hook-form";
 import contactData from "../../../../public/assets/images/contact.json";
@@ -8,6 +9,7 @@ import { FaFacebookSquare } from "react-icons/fa";
 import { FaSquareWhatsapp } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
 import Link from "next/link";
+const Lottie = dynamic(() => import('lottie-react'), { ssr: false });
 
 const Contact = () => {
   const {
