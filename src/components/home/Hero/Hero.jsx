@@ -35,7 +35,7 @@ const Hero = () => {
             <motion.button
               initial={{ opacity: 0, x: -100 }}
               whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 1, delay: 0.4 }}
+              transition={{ duration: 1, delay: 0.2 }}
               className="flex items-center gap-1 bg-blue-500 hover:bg-gray-950 border-2 hover:border-blue-500 text-white text-lg font-bold leading-normal py-2 px-4 rounded-lg transition ease-in-out dealy-150 duration-300"
             >
               Contact Me <IoIosSend className="w-[26px] h-[26px]" />{" "}
@@ -44,7 +44,7 @@ const Hero = () => {
             <motion.button
               initial={{ opacity: 0, x: -100 }}
               whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 1, delay: 0.4 }}
+              transition={{ duration: 1, delay: 0.2 }}
               className="bg-blue-500 hover:bg-gray-950 border-2 hover:border-blue-500 text-white text-lg font-bold leading-normal py-2 px-4 rounded-lg transition ease-in-out dealy-150 duration-300"
             >
               <a
@@ -57,7 +57,7 @@ const Hero = () => {
             </motion.button>
           </div>
         </div>
-        <div className="md:col-span-1 flex justify-center items-center">
+        <div className="md:col-span-1 flex justify-end items-center">
           <MotionImage
             src="/assets/images/hero.png"
             alt="hero image"

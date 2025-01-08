@@ -2,24 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
-.container{
-  @apply px-5 md:px-8 lg:px-12 xl:px-16 2xl:px-20;
+body {
+  @apply bg-[#FFFFFF] overflow-x-hidden;
 }
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+.container {
+  @apply max-w-screen-5xl px-3 md:px-8 lg:px-24 xl:px-28 2xl:px-32 3xl:px-40 4xl:px-52 5xl:px-72 mx-auto;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+
+
+/* Big screen size Media Query */
+@media screen and (min-width: 1400px) {
+  .custom-container {
+    width: 100%;
+    margin: 0 auto;
   }
 }
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+@media screen and (min-width: 1600px) {
+  .custom-container {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1921px) {
+  .custom-container {
+    width: 1920px;
+    margin: 0 auto;
+  }
 }
