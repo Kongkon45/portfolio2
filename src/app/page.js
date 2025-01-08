@@ -3,7 +3,7 @@ import HomePageAllComponents from './../components/home/home';
 
 const HomePage = () => {
   return (
-    <div>
+    <div className='custom-container'>
       <HomePageAllComponents/>
     </div>
   );
