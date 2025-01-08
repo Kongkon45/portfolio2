@@ -1,6 +1,11 @@
+"use client"
 import Image from "next/image";
 import React from "react";
+import { motion } from 'framer-motion';
 
+const MotionImage = motion(Image)
+
+//  shadow-[0px_0px_20px_10px_rgba(0,0,0,0.3)] shadow-blue-500
 const About = () => {
   return (
     <div
@@ -12,15 +17,18 @@ const About = () => {
       </h3>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 pt-5 md:pt-8 lg:pt-10">
         <div className="md:col-span-1">
-          <Image
+          <MotionImage
             src="/assets/images/Kongkon.jpg"
             alt="my-img"
             width={400}
             height={400}
-            className="w-[350px] h-[350px] rounded-full bg-blue-500 shadow-[0px_0px_20px_10px_rgba(0,0,0,0.3)] shadow-blue-500"
+            className="w-[350px] h-[350px] rounded-full border-2 border-gray-950"
+            initial = {{opacity : 0, scale : 0.5}}
+            whileInView = {{opacity : 1, scale : 1}}
+            transition = {{ duration : 0.8}}
           />
         </div>
-        <div className="md:col-span-1 p-5 md:p-10 bg-gray-950 rounded-lg shadow-[0px_0px_20px_10px_rgba(0,0,0,0.3)] shadow-blue-500">
+        <div className="md:col-span-1 p-5 md:p-10 bg-gray-950 rounded-lg shadow-lg shadow-gray-500">
           <p className="text-base text-white font-normal leading-normal text-justify">
             Hi, This is Kongkon Jowarder. I have 1 year of experience as a Web
             Developer. I have experience in JavaScript, TypeScript, React.Js,

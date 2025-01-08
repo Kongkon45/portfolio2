@@ -101,7 +101,7 @@ const Contact = () => {
           />
 
         </div>
-        <div className="md:col-span-1 bg-gray-900 p-8 rounded-lg shadow-[0px_0px_20px_10px_rgba(0,0,0,0.3)] shadow-blue-500">
+        <div className="md:col-span-1 bg-gray-900 p-8 rounded-lg ">
           <h4 className="text-3xl lg:text-4xl font-bold text-white leading-normal pb-5">
             Get in Touch
           </h4>
