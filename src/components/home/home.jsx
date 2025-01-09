@@ -4,6 +4,7 @@ import ParticlesBackground from './Particles/Particles';
 import About from './About/About';
 import Skills from './Skills/Skills';
 import Contact from './Contact/Contact';
+import Project from './Project/Project';
 
 const HomePageAllComponents = () => {
     return (
@@ -12,6 +13,7 @@ const HomePageAllComponents = () => {
             <Hero/>
             <About/>
             <Skills/>
+            <Project/>
             <Contact/>
         </div>
     );
