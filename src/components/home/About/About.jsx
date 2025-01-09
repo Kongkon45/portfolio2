@@ -15,8 +15,8 @@ const About = () => {
       <h3 className="text-3xl lg:text-4xl font-bold text-black text-center leading-normal ">
         About Me
       </h3>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 pt-5 md:pt-8 lg:pt-10">
-        <div className="md:col-span-1">
+      <div className="grid grid-cols-1 md:grid-cols-5 gap-10 pt-5 md:pt-8 lg:pt-10">
+        <div className="md:col-span-2 flex justify-center md:justify-start items-center">
           <MotionImage
             src="/assets/images/Kongkon.jpg"
             alt="my-img"
@@ -28,7 +28,7 @@ const About = () => {
             transition = {{ duration : 0.8}}
           />
         </div>
-        <div className="md:col-span-1 p-5 md:p-10 bg-gray-950 rounded-lg shadow-lg shadow-gray-500">
+        <div className="md:col-span-3 p-5 md:p-10 bg-gray-950 rounded-lg shadow-lg shadow-gray-500">
           <p className="text-base text-white font-normal leading-normal text-justify">
             Hi, This is Kongkon Jowarder. I have 1 year of experience as a Web
             Developer. I have experience in JavaScript, TypeScript, React.Js,
