@@ -9,7 +9,7 @@ import { FaFacebookSquare } from "react-icons/fa";
 import { FaSquareWhatsapp } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
 import Link from "next/link";
-const Lottie = dynamic(() => import('lottie-react'), { ssr: false });
+const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 
 const Contact = () => {
   const {
@@ -33,31 +33,30 @@ const Contact = () => {
       </h3>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 pt-5 md:pt-8 lg:pt-10">
         <div className="md:col-span-1">
-          
-        
-
-          <h4 className="text-3xl lg:text-4xl font-bold text-black leading-normal">
+          <div className="w-full flex justify-center md:justify-start">
+            <h3 className="text-3xl lg:text-4xl font-bold text-black text-center leading-normal ">
             Let's Talk
-          </h4>
+            </h3>
+          </div>
           <div className="w-full flex flex-col md:flex-row items-center justify-between gap-3 gap-5 py-1">
             <div className="w-full md:w-1/2">
-              <h5 className="text-[20px] lg:text-xl font-bold text-black leading-normal">
+              <h5 className="text-[20px] lg:text-xl font-bold text-black leading-normal text-center md:text-left">
                 Email
               </h5>
-              <p className="text-base font-normal text-black leading-normal">
+              <p className="text-base font-normal text-black leading-normal text-center md:text-left">
                 kongkon4545@gmail.com
               </p>
             </div>
             <div className="w-full md:w-1/2">
-              <h5 className="text-[20px] lg:text-xl font-bold text-black leading-normal">
+              <h5 className="text-[20px] lg:text-xl font-bold text-black leading-normal text-center md:text-left">
                 Phone
               </h5>
-              <p className="text-base font-normal text-black leading-normal">
+              <p className="text-base font-normal text-black leading-normal text-center md:text-left">
                 01778934545
               </p>
             </div>
           </div>
-          <div className="">
+          <div className=" flex flex-col items-center md:items-start">
             <h5 className="text-[20px] lg:text-xl font-bold text-black leading-normal">
               Follow Me
             </h5>
@@ -93,13 +92,13 @@ const Contact = () => {
               </Link>
             </div>
           </div>
+
           <Lottie
             loop
             autoplay
             animationData={contactData}
             className="w-[430px] h-[430px]"
           />
-
         </div>
         <div className="md:col-span-1 bg-gray-900 p-8 rounded-lg ">
           <h4 className="text-3xl lg:text-4xl font-bold text-white leading-normal pb-5">
