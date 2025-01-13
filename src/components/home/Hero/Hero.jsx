@@ -4,6 +4,10 @@ import React from "react";
 import { IoIosSend } from "react-icons/io";
 import { LuDownload } from "react-icons/lu";
 import { motion } from "framer-motion";
+import { FaFacebookSquare } from "react-icons/fa";
+import { FaSquareWhatsapp } from "react-icons/fa6";
+import { FaLinkedin } from "react-icons/fa";
+import Link from "next/link";
 
 const MotionImage = motion(Image);
 
@@ -66,7 +70,41 @@ const Hero = () => {
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8 }}
           />
+          <div className="fixed z-50 bg-white border-2 border-blue-300 py-4 px-2 rounded-lg">
+          <div className="flex flex-col justify-center items-center gap-3 md:gap-4 lg:gap-5">
+              {/* Facebook Link */}
+              <Link
+                href="https://www.facebook.com/kongkon.jowarder/"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                aria-label="Visit my Facebook profile"
+              >
+                <FaFacebookSquare className="w-[28px] h-[28px] text-blue-500 hover:text-blue-600 transition-colors cursor-pointer" />
+              </Link>
+
+              {/* WhatsApp Link */}
+              <Link
+                href="tel:01778934545"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                aria-label="Call me on WhatsApp"
+              >
+                <FaSquareWhatsapp className="w-[28px] h-[28px] text-green-500 hover:text-green-600 transition-colors cursor-pointer" />
+              </Link>
+
+              {/* LinkedIn Link */}
+              <Link
+                href="https://www.linkedin.com/in/kongkon-jowarder-50a12725b/"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                aria-label="Visit my LinkedIn profile"
+              >
+                <FaLinkedin className="w-[28px] h-[28px] text-blue-500 hover:text-blue-600 transition-colors cursor-pointer" />
+              </Link>
+            </div>
+          </div>
         </div>
+
       </div>
     </div>
   );
