@@ -41,11 +41,13 @@ const Hero = () => {
           transition={{ duration: 1.2, delay: 0.4 }}
           className="flex items-center gap-10 mt-[20px] lg:mt-[30px]">
 
+            <Link href="#contact">
             <button
               className="flex items-center gap-1 bg-blue-500 hover:bg-gray-950 border-2 hover:border-blue-500 text-white text-lg font-bold leading-normal py-2 px-4 rounded-lg transition ease-in-out dealy-150 duration-300"
             >
               Contact Me <IoIosSend className="w-[26px] h-[26px]" />{" "}
             </button>
+            </Link>
 
             <button
               className="bg-blue-500 hover:bg-gray-950 border-2 hover:border-blue-500 text-white text-lg font-bold leading-normal py-2 px-4 rounded-lg transition ease-in-out dealy-150 duration-300"

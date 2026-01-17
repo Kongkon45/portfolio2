@@ -14,7 +14,10 @@ const HomePageAllComponents = () => {
             <About/>
             <Skills/>
             <Project/>
-            <Contact/>
+            <div id="contact">
+
+            <Contact />
+            </div>
         </div>
     );
 };
