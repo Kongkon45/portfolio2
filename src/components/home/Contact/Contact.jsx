@@ -2,13 +2,13 @@
 import dynamic from "next/dynamic";
 import React from "react";
 import { useForm } from "react-hook-form";
-// import emailjs from "emailjs-com";
-import emailjs from "@emailjs/browser";
+import emailjs from "emailjs-com";
 import contactData from "../../../../public/assets/images/contact.json";
 import { FaFacebookSquare } from "react-icons/fa";
 import { FaSquareWhatsapp } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
 import Link from "next/link";
+import { toast } from "react-toastify";
 
 const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 
@@ -20,35 +20,23 @@ const Contact = () => {
     formState: { errors },
   } = useForm();
 
-  const onSubmit = async (data) => {
-     try {
-    await emailjs.send(
-      "YOUR_SERVICE_ID",
-      "YOUR_TEMPLATE_ID",
-      data,
-      "YOUR_PUBLIC_KEY"
-    );
-    alert("Message sent!");
-  } catch (err) {
-    console.error(err);
-    alert("Failed to send");
-  }
-    // const serviceID = "service_av6kbe7";
-    // const templateID = "template_oxbvadb";
-    // const publicKey = "8YOyIWFngfzKrYeE8";
+  const onSubmit = (data) => {
+    const serviceID = "service_av6kbe7";
+    const templateID = "template_oxbvadb";
+    const publicKey = "8YOyIWFngfzKrYeE8";
 
-    // emailjs
-    //   .send(serviceID, templateID, data, publicKey)
-    //   .then(
-    //     (result) => {
-    //       alert("Message sent successfully!");
-    //       reset();
-    //     },
-    //     (error) => {
-    //       console.error(error);
-    //       alert("Failed to send message. Try again.");
-    //     }
-    //   );
+    emailjs
+      .send(serviceID, templateID, data, publicKey)
+      .then(
+        (result) => {
+          toast.success("Message sent successfully!");
+          reset();
+        },
+        (error) => {
+          console.error(error);
+          toast.error("Failed to send message. Try again.");
+        }
+      );
   };
 
   return (
