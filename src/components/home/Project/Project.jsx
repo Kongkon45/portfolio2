@@ -7,8 +7,8 @@ import { FaGithub } from "react-icons/fa6";
 const projectData = [
   {
     id: 1,
-    img: "/assets/images/projects/raf-cart.png",
-    name: "RafCart E-commerce Web",
+    img: "/assets/images/projects/claude-frontend.png",
+    name: "Claude Website",
     desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
     live_url : "https://raf-cart-client-side.vercel.app",
     github : "https://github.com/Kongkon45/RafCart--Client-side"
