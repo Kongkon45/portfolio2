@@ -78,7 +78,7 @@ const Hero = () => {
 
              {/* Github Link */}
               <Link
-                href="https://github.com/Kongkon45"
+                href="https://github.com/Kongkon-79"
                 target="_blank"
                 rel="noopener noreferrer nofollow"
                 aria-label="Visit my Github profile"
@@ -116,7 +116,17 @@ const Hero = () => {
               >
                 <FaLinkedin className="w-[28px] h-[28px] text-blue-500 hover:text-blue-600 transition-colors cursor-pointer" />
               </Link>
-              
+
+              {/* LinkedIn Link */}
+              <Link
+                href="https://www.linkedin.com/in/kongkon-jowarder-50a12725b/"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                aria-label="Visit my LinkedIn profile"
+              >
+                <FaLinkedin className="w-[28px] h-[28px] text-blue-500 hover:text-blue-600 transition-colors cursor-pointer" />
+              </Link>
+
             </div>
           </div>
         </div>
