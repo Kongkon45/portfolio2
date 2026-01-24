@@ -7,6 +7,7 @@ import { motion } from "framer-motion";
 import { FaFacebookSquare } from "react-icons/fa";
 import { FaSquareWhatsapp } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 import Link from "next/link";
 
 const MotionImage = motion(Image);
@@ -73,7 +74,19 @@ const Hero = () => {
             transition={{ duration: 0.8 }}
           />
           <div className="fixed z-50 bg-white border-2 border-blue-300 py-4 px-2 rounded-lg">
-          <div className="flex flex-col justify-center items-center gap-3 md:gap-4 lg:gap-5">
+          <div className="flex flex-col justify-center items-center gap-3 md:gap-4">
+
+             {/* Github Link */}
+              <Link
+                href="https://github.com/Kongkon45"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                aria-label="Visit my Github profile"
+              >
+                <FaGithub className="w-[28px] h-[28px] text-blue-500 hover:text-blue-600 transition-colors cursor-pointer" />
+              </Link>
+
+
               {/* Facebook Link */}
               <Link
                 href="https://www.facebook.com/kongkon.jowarder/"
@@ -103,6 +116,7 @@ const Hero = () => {
               >
                 <FaLinkedin className="w-[28px] h-[28px] text-blue-500 hover:text-blue-600 transition-colors cursor-pointer" />
               </Link>
+              
             </div>
           </div>
         </div>

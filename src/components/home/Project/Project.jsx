@@ -10,23 +10,23 @@ const projectData = [
     img: "/assets/images/projects/claude-frontend.png",
     name: "Claude Website",
     desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    live_url : "https://raf-cart-client-side.vercel.app",
+    live_url : "https://claude-frontend-livid-gold.vercel.app",
     github : "https://github.com/Kongkon45/RafCart--Client-side"
   },
   {
     id: 2,
-    img: "/assets/images/projects/discount-me.png",
-    name: "Discount Me",
+    img: "/assets/images/projects/claude-dashboard.png",
+    name: "Claude Dashboard",
     desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    live_url : "https://discount-me-client-side.vercel.app",
+    live_url : "https://claude-dashboard.vercel.app",
     github : "https://github.com/Kongkon45/discount-me-client-side"
   },
   {
     id: 3,
-    img: "/assets/images/projects/glitz.png",
-    name: "Glitz Floor & More",
+    img: "/assets/images/projects/perrystown_orthodontics.png",
+    name: "Perrystown Orthodontics",
     desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    live_url : "https://www.glitzfloorsandmore.com",
+    live_url : "https://perrystownorthodontics.com",
     github : "https://github.com/csebiplab/glitz"
   },
   {
@@ -65,7 +65,7 @@ const Project = () => {
         All Projects
       </h3>
       <div className="pt-5 md:pt-8 lg:pt-10">
-        <div className="grid grid-cols-1 md:gris-cols-2 lg:grid-cols-3 gap-10">
+        <div className="grid grid-cols-1 md:gris-cols-2 lg:grid-cols-3 gap-5">
           {projectData?.map((data) => {
             return (
               <div
