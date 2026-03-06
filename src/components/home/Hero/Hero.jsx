@@ -24,7 +24,7 @@ const Hero = () => {
             className="text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-bold leading-normal text-black"
           >
             Hello, My Name is <br />{" "}
-            <strong className="text-blue-500">Kongkon Jowarder</strong>
+            <strong className="text-blue-500">Kongkon Jowarder!</strong>
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, x: -100 }}
